@@ -1,0 +1,37 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 19
+    }
+
+    /*signingConfigs {
+        release {
+            storeFile file(System.console().readLine("\n\$ Enter keystore path: "))
+            storePassword new String(System.console().readPassword("\n\$ Enter keystore password: "))
+            keyAlias System.console().readLine("\n\$ Enter key alias: ")
+            keyPassword new String(System.console().readPassword("\n\$ Enter key password: "))
+        }
+    }*/
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+        }
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            //signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    //compile 'com.android.support:support-v4:+'
+    compile files('libs/android-support-v13.jar')
+}

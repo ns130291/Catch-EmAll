@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Catch \'Em All</string>
+    <string name="save_with">Save with Catch \'Em All</string>
+    <string name="save_failed">Saving failed</string>
+    <string name="welcome">Welcome to Catch \'Em All</string>
+    <string name="functions1">Catch \'Em All allows you to save files to your SD card which are shared via the share menu.</string>
+    <string name="functions2">To be able to save your files in any folder on your SD card you have to enable an option in the File Picker App.</string>
+    <string name="functions3">Open File Picker</string>
+    <string name="functions4">Open the settings screen via the overflow menu</string>
+    <string name="functions5">Enable the option \"Display advanced devices\"</string>
+    <string name="functions6">You\'re done!</string>
+    <string name="functions7">The next time you want to save a file to your SD card just choose the \"Save with Catch \'Em All\" entry in the share menu</string>
+
+</resources>
